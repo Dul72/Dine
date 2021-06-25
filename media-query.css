@@ -32,7 +32,7 @@
         text-align: left;
     }
     .cover-image{
-        min-height:100vh;
+       /*-- min-height:100vh;--*/
         width: 100%;
         background: url('images/heder-bg-3.png');
         background-size: cover;
@@ -220,24 +220,29 @@
 
 /*-------------------bookings-section-start-----------------------*/
 @media(min-width:576px){
+
+    .booking-cover{
+        background-size: cover;
+        width:100%;
+        background: url(images/GaryTardiff-10.jpg);
+    }
+
     .bookings-section{
-       
+       margin-bottom: 0;
     }
     .from-box{
-        top:-5.5rem;
         background: #ffffff;
-        width: 100%;
+        width: 90%;
     }
     .day{
         margin-top: 0;
         margin-bottom: 1.5rem;
     }
+    #month, #mins{
+        margin:0 9% ;
+    }
 }
 @media(min-width:768px){
-    .bookings-section{
-        min-height:70vh; 
-
-    }
     .from-box{
         top:-6rem;
         background: #ffffff;
@@ -249,10 +254,6 @@
     }
 }
 @media(min-width:992px){
-    .bookings-section{
-        min-height:70vh; 
-
-    }
     .from-box{
         top:20rem;
         background: #ffffff;
